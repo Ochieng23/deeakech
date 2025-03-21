@@ -7,19 +7,32 @@ import Collaborations from "@/components/Partnerships";
 import Story from "@/components/About";
 import Contact from "@/components/Contact";
 import Portfolio from "@/components/Portfolio";
+
 export default function Home() {
   return (
-   <>
-   <Navbar />
-   <Hero />
-   <ScrollingSection />
-   <Collaborations />
-   <Videos />
-   <Story/>
-   <Portfolio/>
-   <Contact />
-   
-  
-   </>
+    <>
+      <Navbar />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="scrolling-section">
+        <ScrollingSection />
+      </div>
+      <div id="collabs">
+        <Collaborations />
+      </div>
+      <div id="videos">
+        <Videos />
+      </div>
+      <div id="about">
+        <Story />
+      </div>
+      <div id="portfolio">
+        <Portfolio />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+    </>
   );
 }
